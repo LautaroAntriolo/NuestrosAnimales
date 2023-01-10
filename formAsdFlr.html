@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            background-color: rgb(182, 97, 97);
+            background-attachment: fixed;
+            
+        }
+
+        .container {
+            display: block;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(167, 88, 98);
+            border-radius: 8px;
+            padding: 1rem;
+            width: 40rem;
+            margin: 2rem auto;
+            opacity:0.8;
+        }
+        input[type=text],
+        input[type=date],
+        select,
+        textarea,
+        button {
+            width: 38rem;
+            padding: 5px ;
+            margin:18px auto;
+            border: 2px solid grey;
+            border-radius: 8px;
+            background-color: white;
+            color: black;
+        }
+
+        label {
+            padding: 0px 0px 0px 10px;
+            display: block;
+            color: rgb(247, 245, 245);
+        }
+
+        button {
+            background-color: #15ac3bc4;
+            border: none;
+            color: white;
+            padding: 4px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 4xp 4px;
+            cursor: pointer;
+            margin: 3px 0px 0px 8px;
+        }
+
+        button:hover {
+            background-color: #16d145c4;
+        }
+
+        input:focus {
+            border: 3px solid black;
+            border-radius: 12px;
+        }
+
+        select:focus {
+            border: 3px solid rgb(5, 5, 17);
+            border-radius: 12px;
+        }
+        .titulo {
+            color: white;
+            text-decoration: none;
+            text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        ::placeholder {
+            color: rgb(5, 5, 5)
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="titulo">
+            <h1>Contactanos</h1>
+        </div>
+
+        <form action="#" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Pon su nombre aqui" required />
+            <label for="Apellido">Apellido</label>
+            <input type="text" name="Apellido" id="Apellido" placeholder="Pon su apellido aqui" required />
+            <label for="BirthDate">Fecha de nacimiento: </label>
+            <input type="date" name="Cumpleaños" required> <br>
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais" required>
+                <option disabled selected hidden>Seleccione</option>
+                <option>Argentina</option>
+                <option>Colombia</option>
+                <option>Peru</option>
+                <option>Brasil</option>
+            </select>
+            <label>Otro</label>
+            <textarea rows="1" cols="10"></textarea>
+            <label>Danos tu opinion</label>
+            <textarea></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+
+
+</html>
